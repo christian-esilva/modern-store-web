@@ -1,0 +1,14 @@
+<div class="navbar-end">
+  <a class="navbar-item">Bem vindo, {{ user }}</a>
+  <a routerLink="/home" class="navbar-item">Home</a>
+  <a routerLink="/cart" class="navbar-item">Carrinho ({{totalItems}})</a>
+  <a routerLink="/home" class="navbar-item">Meu Perfil</a>
+  <span class="navbar-item">
+    <a (click)="logout()" class="button is-primary is-inverted">
+      <span class="icon">
+        <i class="fa fa-power-off"></i>
+      </span>
+      <span>Sair</span>
+    </a>
+  </span>
+</div>
